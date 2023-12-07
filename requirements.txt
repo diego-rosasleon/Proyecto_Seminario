@@ -4,3 +4,16 @@ xlrd
 exchange_calendars
 openpyxl
 yfinance
+datetime
+
+streamlit
+yfinance
+pandas
+plotly
+exchange_calendars as
+datetime
+numpy
+scipy.stats
+from numpy.linalg
+warnings
+random
