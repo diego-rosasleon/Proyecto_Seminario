@@ -8,19 +8,11 @@ import plotly as plt
 import plotly.graph_objects as go
 import exchange_calendars as xcals
 from datetime import date
-
-import yfinance as yf
-import pandas as pd
-import plotly as plt
-from datetime import date
 import numpy as np
 from scipy.stats import norm, skew, kurtosis
 from numpy.linalg import multi_dot
-import warnings
-import random
 from scipy.stats import kurtosis
 import plotly.express as px
-warnings.filterwarnings('ignore')
 
 # FUNCIONES ##################################################################
 
@@ -222,4 +214,6 @@ if option == "Activos":
     sim_returns = np.random.normal(mean[activo], stdev[activo], n_sims)
     MCVaR_95 = np.percentile(sim_returns, 5)
     st.write("El VaR Montecarlo al 95% de ",activo, round(MCVaR_95*100,4))
+
+
 
